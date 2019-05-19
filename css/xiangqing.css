@@ -6,6 +6,9 @@ header{
     background-color: #fbfeff;
     box-shadow: 0 0.03rem 0.43rem 0
     rgba(41, 167, 255, 0.13);
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 header ul {
     display:flex;
@@ -383,8 +386,12 @@ padding: 0 0.22rem;
 /*底部的设计*/
 .bottom{
     height: 0.96rem;
+    width: 100%;
     padding: 0.22rem;
-
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
 }
 .bottom ul{
     display: flex;
@@ -410,4 +417,6 @@ padding: 0 0.22rem;
     rgba(55, 223, 116, 0.75);
     border-radius: 0.3rem;
     text-align: center;
+    font-size: 0.26rem;
+    line-height: 0.6rem;
 }
