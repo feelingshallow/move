@@ -115,16 +115,16 @@ list{
     top: 0.14rem;
 }
 .inform .frist p:nth-child(3):before{
-    width: 0.05rem;
-    height: 0.05rem;
-    background-color: #44b5ff;
-    border-radius: 0.03rem;
-    display: inline-block;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.14rem;
-}
+     width: 0.05rem;
+     height: 0.05rem;
+     background-color: #44b5ff;
+     border-radius: 0.03rem;
+     display: inline-block;
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0.14rem;
+ }
 .inform a .frist p:nth-child(1){
     font-size: 0.22rem;
     color:rgba(0,0,0,0.3);
