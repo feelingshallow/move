@@ -349,6 +349,7 @@ padding: 0 0.22rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 1.5rem;
 }
 .liebiao li{
    
@@ -380,7 +381,7 @@ padding: 0 0.22rem;
     font-size: 0.28rem;
     font-weight: normal;
     font-stretch: normal;
-    letter-spacing: 0rem;
+    letter-spacing: 0;
     color: #fbb548;
 }
 /*底部的设计*/

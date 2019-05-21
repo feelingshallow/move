@@ -47,6 +47,7 @@ header li a .iconfont{
     line-height: 0.88rem;
     display: flex;
     flex-direction: row-reverse;
+    flex: 1;
 }
 .search .sousuo p{
     width: 0.79rem;
