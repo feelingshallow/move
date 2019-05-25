@@ -70,7 +70,7 @@ header{
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 7.5rem;
+    width: 100%;
     height: 0.98rem;
     background-color: #f1f9ff;
     display:flex;
@@ -79,6 +79,7 @@ header{
     align-items: center;
     padding: 0 0.22rem;
     box-sizing: border-box;
+    flex: 1;
 }
 .footer li {
     width: 1.4rem;
