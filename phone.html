@@ -9,6 +9,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/pohone.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1194311_cbdqa9pmhwv.css">
+    <link rel="stylesheet" href="swiper-4.5.0/dist/css/swiper.min.css">
+    <script src="jquery-3.4.1.js"></script>
+    <script src="swiper-4.5.0/dist/js/swiper.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 7.5rem;
+            height: 3rem;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -19,7 +28,21 @@
     <a href=""></a>
 </div>
 <div class="banner">
-    <img src="./img/banner.png" alt="">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/banner.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/banner.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/banner.png" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+    </div>
 </div>
 <ul class="category">
     <li><a href="shuiluzonghe.html"><img src="./img/l1.png" alt=""> <p>水路综合</p></a> </li>
@@ -39,5 +62,37 @@
     <li><a href="shopping.html"><img src="./img/order.png" alt=""><p>订单</p></a></li>
     <li><a href="person.html"><img src="./img/personal.png" alt=""><p>我的</p></a></li>
 </ul>
+
+<script>
+    $(function () {
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+            speed:300,
+            autoplay : {
+                delay:1000
+            },
+
+            effect : 'coverflow',
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+
+    })
+</script>
 </body>
 </html>
